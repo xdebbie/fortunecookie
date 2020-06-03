@@ -1,0 +1,84 @@
+/* --------------------------------------------
+$  FOOTER
+ --------------------------------------------*/
+
+footer {
+    margin: auto 10%;
+    font-size: 1.2rem;
+    color: colour(full-moon);
+
+    @include mobile-m {
+        font-size: 1.3em;
+    }
+
+    @include mobile-l {
+        font-size: 1.4rem;
+    }
+
+    @include tablet {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+
+        @include tablet {
+            font-size: 1.4rem;
+        }
+
+        #git,
+        #twitter,
+        #linkedin,
+        #medium,
+        #dev {
+            text-decoration: none;
+            padding: 0 5px;
+
+            &:before {
+                color: colour(lonestar-darker);
+                font-family: "Font Awesome 5 Brands";
+                font-weight: 900;
+            }
+
+            &:hover:before {
+                color: colour(full-moon);
+            }
+        }
+
+        #git {
+            &:before {
+                content: '\f09b';
+            }
+        }
+
+        #twitter {
+            &:before {
+                content: '\f099';
+            }
+        }
+
+        #linkedin {
+            &:before {
+                content: '\f0e1';
+            }
+        }
+
+        #medium {
+            &:before {
+                content: '\f3c7';
+            }
+        }
+
+        #dev {
+            &:before {
+                content: '\f6cc';
+            }
+        }
+    }
+}

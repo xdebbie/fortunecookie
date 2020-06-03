@@ -1,0 +1,33 @@
+/* --------------------------------------------
+$  HEADER
+ --------------------------------------------*/
+
+header {
+    h1 {
+        font-size: 1.5rem;
+        color: colour(topaz);
+        text-transform: uppercase;
+        padding: $padding-s;
+        transition: 200ms;
+        margin: 0;
+
+        span {
+            display: table;
+            margin: 0 auto;
+        }
+
+        @include mobile-m {
+            font-size: 2rem;
+        }
+
+        @include tablet {
+            font-size: 3rem;
+            padding: $padding-m;
+        }
+
+        &:hover {
+            color: colour(apricot);
+            transition: 200ms;
+        }
+    }
+}

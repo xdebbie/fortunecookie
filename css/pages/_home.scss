@@ -1,0 +1,98 @@
+/* --------------------------------------------
+$  HOME PAGE
+ --------------------------------------------*/
+
+body {
+    text-align: center;
+    display: grid;
+
+    main {
+        overflow: hidden;
+
+        .quote {
+            position: relative;
+            background: rgba($color: #000000, $alpha: 0.3);
+            padding: 2rem 1rem 1rem 1rem;
+            margin: 0 20%;
+            color: colour(topaz);
+            border: $border solid colour(topaz);
+            border-radius: 15px;
+
+            @include mobile-m {
+                margin-top: 2rem;
+            }
+
+            @include mobile-l {
+                margin-top: 3rem;
+            }
+
+            @include tablet {
+                margin-top: 0;
+                padding: 3rem 1rem 1rem 1rem;
+            }
+
+            .blur {
+                filter: blur(15px);
+            }
+
+            h2 {
+                font-size: 0.8rem;
+                line-height: 1.8rem;
+
+                @include mobile-m {
+                    font-size: 1rem;
+                    line-height: 2.2rem;
+                }
+
+                @include tablet {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                padding: 0.5rem 0.6rem 0 0.7rem;
+                font-size: 0.6rem;
+                text-align: right;
+
+                @include mobile-m {
+                    padding: $padding-xs;
+                    font-size: 0.8rem;
+                }
+
+                @include tablet {
+                    font-size: 1rem;
+                }
+            }
+
+            .cookie img {
+                position: absolute;
+                transform: rotate(325deg) scaleX(-1);
+                bottom: -3rem;
+                right: -3.4rem;
+                height: 100px;
+                width: auto;
+                margin: 0;
+                padding: 0;
+
+                @include mobile-m {
+                    bottom: -4rem;
+                    right: -4.4rem;
+                    height: 140px;
+                }
+
+                @include tablet {
+                    transform: rotate(315deg) scaleX(-1);
+                    bottom: -5rem;
+                    right: -7rem;
+                    height: 180px;
+                }
+            }
+        }
+
+        #button {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
