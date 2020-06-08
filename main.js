@@ -12,6 +12,6 @@ document.querySelector('.open-it').addEventListener('click', function () {
         [].forEach.call(elems, function (el) {
             el.classList.remove('blur');
             // to get a day = 60 seconds to a minute, 60 minutes to an hour, 24 hours to a day
-            document.cookie = "visited=true; max-age=" + 5;
+            document.cookie = "visited=true; max-age=" + 7200;
         });
 });
