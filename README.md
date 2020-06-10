@@ -10,6 +10,8 @@
 
 ## **_The fortune_**
 
+### https://xdebbie-fortunecookie.herokuapp.com
+
 You can only open 1 cookie every 2 hours.
 
 The PHP file contains a small database of the fortunes and the Javascript handles the fortune reveal and the cooldown management.
