@@ -18,4 +18,4 @@ The PHP file contains a small database of the fortunes and the Javascript handle
 
 ## **_The project_**
 
-This PHP mini-experiment was deployed on Heroku since GitHub won't handle PHP. The objective of this little project was to practice the integration between PHP and Javascript, the deployment of web-apps on Heroku and the implementation of a 7-1 directory structure on SASS.
+This PHP mini-experiment was deployed on Heroku since GitHub won't handle PHP. The objective of this little project was to practice the integration between PHP and Javascript, the deployment of web-apps using Composer on Heroku and the implementation of a 7-1 directory structure on SASS.
